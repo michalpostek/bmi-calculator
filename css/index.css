@@ -60,6 +60,10 @@
 
 .btn-wrapper {
     grid-column: 2;
+    justify-self: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: var(--smallMargin);
 }
 
 .btn {

@@ -2,6 +2,7 @@ const weightInput = document.getElementById('weight');
 const heightInput = document.getElementById('height');
 const resultOutput = document.getElementById('result');
 const getBmiBtn = document.getElementById('getBmiBtn');
+const clearBtn = document.getElementById('clearBtn');
 
 getBmiBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -24,4 +25,10 @@ getBmiBtn.addEventListener('click', (e) => {
     }
 
     resultOutput.innerHTML = result;
+});
+
+clearBtn.addEventListener('click', () => {
+    weightInput.value = '';
+    heightInput.value = '';
+    resultOutput.innerHTML = '';
 });
