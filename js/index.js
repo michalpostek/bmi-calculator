@@ -10,9 +10,10 @@ getBmiBtn.addEventListener('click', (e) => {
     const height = parseFloat(heightInput.value);
 
     const BMI = weight / Math.pow(height / 100, 2);
+    const category = getCategory(BMI);
 
     resultOutput.innerHTML = `
         <p>Your BMI is ${BMI} </p>
-        <p>Your Category is ${Category} </p>
+        <p>Your Category is ${category} </p>
     `;
 });
