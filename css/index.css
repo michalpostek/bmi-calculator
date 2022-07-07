@@ -23,7 +23,7 @@
 .form {
     display: grid;
     min-width: 40%;
-    grid-row-gap: var(--largeMargin);
+    grid-gap: var(--largeMargin);
     grid-template-columns: auto 1fr;
     margin: var(--largeMargin) 0;
 }
@@ -33,7 +33,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--mediumMargin) var(--largeMargin);
 }
 
 .input-wrapper {
