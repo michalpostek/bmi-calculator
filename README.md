@@ -1,5 +1,9 @@
 <h1>BMI Calculator</h1>
-<p>Simple calculator built with HTML, CSS and Javascript. App design is inspired by <a href="https://github.com/SalithaUCSC/BMI-Calculator">this project</a>.</p>
+<p>Simple calculator built with HTML, CSS and Javascript inspired by <a href="https://github.com/SalithaUCSC/BMI-Calculator">this project</a>.</p>
+<p>Images are from <a href="https://stock.adobe.com/">Adobe Stock</a>.</p>
+
+<h2>License</h2>
+<p>This project is released under MIT License.</p>
 
 <h2>Installation</h2>
 <ul>
