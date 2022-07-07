@@ -1,0 +1,11 @@
+:root {
+    --smallFont: 1.5rem;
+    --mediumFont: 1.8rem;
+    --largeFont: 2.6rem;
+
+    --smallMargin: 0.5rem;
+    --mediumMargin: 1rem;
+    --largeMargin: 1.5rem;
+
+    --grey: #948A8A;
+}

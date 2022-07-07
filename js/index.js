@@ -11,5 +11,8 @@ getBmiBtn.addEventListener('click', (e) => {
 
     const BMI = weight / Math.pow(height / 100, 2);
 
-    resultOutput.textContent = `Your BMI is ${BMI}`;
+    resultOutput.innerHTML = `
+        <p>Your BMI is ${BMI} </p>
+        <p>Your Category is ${Category} </p>
+    `;
 });
