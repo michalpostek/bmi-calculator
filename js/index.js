@@ -6,14 +6,22 @@ const getBmiBtn = document.getElementById('getBmiBtn');
 getBmiBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
+    let result;
+
     const weight = parseFloat(weightInput.value);
     const height = parseFloat(heightInput.value);
 
-    const BMI = weight / Math.pow(height / 100, 2);
-    const category = getCategory(BMI);
+    if (!weight || !height) {
+        result = 'You passed incorrect values!';
+    } else {
+        const BMI = Math.round(weight / Math.pow(height / 100, 2) * 100) / 100;
+        const category = getCategory(BMI);
 
-    resultOutput.innerHTML = `
-        <p>Your BMI is ${BMI} </p>
-        <p>Your Category is ${category} </p>
-    `;
+        result = `
+            <p>Your BMI is ${BMI} </p>
+            <p>Your Category is ${category} </p>
+        `
+    }
+
+    resultOutput.innerHTML = result;
 });
