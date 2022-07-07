@@ -104,3 +104,7 @@
 .table__header {
     background: var(--lightGrey);
 }
+
+.error {
+    font-size: var(--smallFont);
+}
