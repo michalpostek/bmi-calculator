@@ -12,8 +12,8 @@
 }
 
 .header__illustration {
-    width: 12rem;
-    margin: var(--mediumMargin) 0;
+    width: 10rem;
+    margin: var(--smallMargin) 0;
 }
 
 .header__title {
@@ -67,15 +67,40 @@
 
 .btn {
     padding: var(--smallMargin) var(--mediumMargin);
-    transition: .1s;
+    transition: .2s;
+    opacity: 1;
+}
+
+.btn--primary {
+    background: var(--red);
 }
 
 .btn:hover {
     cursor: pointer;
-    background: var(--grey);
+    opacity: 0.9;
 }
 
-.result {
-    margin: var(--smallMargin);
-    font-size: var(--mediumFont);
+.hidden {
+    display: none;
+}
+
+.table {
+    min-width: 40%;
+    margin: var(--largeMargin) 0;
+    border-radius: 0.5rem;
+}
+
+.table, .table__header, .table__data {
+    border: 1px solid var(--grey);
+    border-collapse: collapse;
+}
+
+.table__header, .table__data {
+    text-align: center;
+    padding: var(--mediumMargin) var(--largeMargin);
+    font-size: var(--smallFont);
+}
+
+.table__header {
+    background: var(--lightGrey);
 }

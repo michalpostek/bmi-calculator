@@ -32,18 +32,31 @@
                 <span class="input__unit">kg</span>
             </div>
             <div class="btn-wrapper">
-                <button type="button" class="btn" id="getBmiBtn">
+                <button type="button" class="btn btn--primary" id="getBmiBtn">
                     Get BMI
                 </button>
-                <button type="button" class="btn" id="clearBtn">
+                <button type="button" class="btn btn--secondary" id="clearBtn">
                     Clear
                 </button>
             </div>
         </form>
     
-        <div id="result" class="result" class="hidden">
-    
-        </div>
+        <table id="resultTable" class="table hidden">
+            <thead>
+                <tr class="table__row">
+                    <th class="table__header">BMI</th>
+                    <th class="table__header">Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table__row">
+                    <td class="table__data" id="bmiOutput">25</td>
+                    <td class="table__data" id="categoryOutput">Eos et.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p id="error" class="error hidden"></p>
     </div>
 
     <script src="./js/helpers.js"></script>
